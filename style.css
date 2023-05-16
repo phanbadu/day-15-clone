@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	padding: 50px;
+    height: 100vh;
+    background: linear-gradient(to bottom,#dcdda2,rgb(202, 99, 99));
+}
+
+.tool {
+    display: flex;
+	background: #000;
+    align-items: center;
+	border-radius: 10px;
+}
+
+#save,
+#clear,
+#color,
+#decrease,
+#eraser,
+#size,
+#increase {
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+#save:active,
+#clear:active,
+#color:active,
+#decrease:active,
+#eraser:active,
+#size:active,
+#increase:active {
+	background-color: rgb(232, 154, 154);
+	transition: 0.1s;
+}
+
+.tool > * {
+    height: 40px;
+    width: 40px;
+    background: rgb(134, 246, 148);
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#save {
+    margin-left: auto;
+}
+
+canvas {
+    margin: 0 auto;
+	box-shadow: 0 0 10px rgb(255, 255, 255);
+	border-radius: 50px;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+	margin-bottom: 100px;
+}
+
+@media (max-width: 1025px) {
+	body {
+		padding: 30px;
+	}
+}
